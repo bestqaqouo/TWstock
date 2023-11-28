@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>股票查詢系統</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/mystyle.css">
+
+</head>
+<body>
+	<img src="/static/images/background.jpg" class="background">
+	<div class="stock_result">
+		您的查詢結果如下：
+		<ul>
+			<li>查詢時間：{{time}}</li>
+			<li>股票代號：{{code}}</li>
+			<li>股票名稱：{{stock_name}}</li>
+			<li>股票全名：{{stock_full_name}}</li>
+			<li>開盤價：{{open}}</li>
+			<li>最高價：{{high}}</li>
+			<li>最低價：{{low}}</li>
+		</ul>
+		<table>
+			<tr>
+            	<td>最佳買入價</td>
+            	<td>最佳買入數量</td>
+            	<td>最佳賣出價</td>
+            	<td>最佳賣出數量</td>
+        	</tr>
+        	<tr>
+            	<td>{{best_bid_price.0}}</td>
+            	<td>{{best_bid_volume.0}}</td>
+            	<td>{{best_ask_price.0}}</td>
+            	<td>{{best_ask_volume.0}}</td>
+        	</tr>
+        	<tr>
+            	<td>{{best_bid_price.1}}</td>
+            	<td>{{best_bid_volume.1}}</td>
+            	<td>{{best_ask_price.1}}</td>
+            	<td>{{best_ask_volume.1}}</td>
+        	</tr>
+        	<tr>
+            	<td>{{best_bid_price.2}}</td>
+            	<td>{{best_bid_volume.2}}</td>
+            	<td>{{best_ask_price.2}}</td>
+            	<td>{{best_ask_volume.2}}</td>
+        	</tr>
+        	<tr>
+            	<td>{{best_bid_price.3}}</td>
+            	<td>{{best_bid_volume.3}}</td>
+            	<td>{{best_ask_price.3}}</td>
+            	<td>{{best_ask_volume.3}}</td>
+        	</tr>
+        	<tr>
+            	<td>{{best_bid_price.4}}</td>
+            	<td>{{best_bid_volume.4}}</td>
+            	<td>{{best_ask_price.4}}</td>
+            	<td>{{best_ask_volume.4}}</td>
+        	</tr>
+		</table>
+	</div>
+</body>
+</html>
